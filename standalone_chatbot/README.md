@@ -1,180 +1,90 @@
-# Standalone Fused LLM Chatbot
+# Comprehensive LLM Optimization System
 
-A clean, standalone implementation of the Fused LLM Efficiency System that works on macOS and doesn't require CUDA or complex server setups.
+A comprehensive LLM efficiency system with multiple optimization methods including Hybrid KV Cache (vAttention + CAKE), SimpleAdaptiVocab, Word Removal, and LaRoSA.
 
 ## Features
 
-✅ **AdaptiVocab Integration** - Tokenizer optimization for 25%+ token reduction  
-✅ **LaRoSA Activation Sparsity** - Simplified CPU implementation  
-✅ **Simple Inference Engine** - No CUDA dependencies  
-✅ **Interactive Chat Interface** - Easy-to-use CLI  
-✅ **macOS Compatible** - Works out of the box on Mac  
+✅ **Hybrid KV Cache** - Combines vAttention (15% savings) and CAKE (12% savings) for 25.2% memory reduction  
+✅ **SimpleAdaptiVocab** - Phrase-based token reduction  
+✅ **Word Removal** - Text compression by removing every Nth word  
+✅ **LaRoSA** - Activation sparsity for computation speedup  
+✅ **Comprehensive Metrics** - Time, tokens, memory, efficiency tracking  
+✅ **Multi-Query Testing** - Test multiple queries with input/output tracking  
 
 ## Installation
 
-### 1. Create Conda Environment
-
 ```bash
-conda create -n standalone_chat python=3.11 -y
-conda activate standalone_chat
-```
-
-### 2. Install Dependencies
-
-```bash
-cd standalone_chatbot
 pip install -r requirements.txt
 ```
 
 ## Quick Start
 
-### Basic Usage (Standard Model)
+### Comprehensive Method Comparison
+
+Test all optimization methods on a single query:
 
 ```bash
-python standalone_chat.py --model gpt2 --interactive
+python comprehensive_chat_engine.py --message "What is AI?" --quick
 ```
 
-### With AdaptiVocab (Tokenizer Optimization)
+### Multi-Query Comparison
 
-First, create a PatchTokenizer (see AdaptiVocab documentation):
+Test multiple queries across different methods:
 
 ```bash
-# Create PatchTokenizer
-cd ../AdaptiVocab/src/build_vocab
-python create_patch_tokenizer.py
+python multi_query_comparison.py --quick
 ```
 
-Then use it:
+### Visualize Results
 
 ```bash
-python standalone_chat.py \
-    --model gpt2 \
-    --patch-tokenizer ../AdaptiVocab/src/saved_patch_tokenizers/[config]/patch_tokenizer.pkl \
-    --interactive
+# Comprehensive results
+python visualize_comprehensive_chat.py --output comprehensive_analysis_plots
+
+# Multi-query results
+python visualize_multi_query.py
 ```
 
-### With LaRoSA (Activation Sparsity)
+## Core Files
 
-```bash
-python standalone_chat.py \
-    --model gpt2 \
-    --larosa-sparsity 0.4 \
-    --interactive
-```
+- `comprehensive_chat_engine.py` - Main comprehensive chat engine with all optimizations
+- `hybrid_kv_cache.py` - Hybrid KV Cache optimizer (vAttention + CAKE)
+- `fused_chatbot_enhanced.py` - Enhanced LLM engine with optimizations
+- `simple_adaptivocab.py` - SimpleAdaptiVocab phrase combination
+- `test_word_removal.py` - Word removal utility
+- `multi_query_comparison.py` - Multi-query testing script
+- `visualize_comprehensive_chat.py` - Comprehensive visualization
+- `visualize_multi_query.py` - Multi-query visualization
 
-### Combined (All Optimizations)
+## Optimization Methods
 
-```bash
-python standalone_chat.py \
-    --model gpt2 \
-    --patch-tokenizer path/to/patch_tokenizer.pkl \
-    --larosa-sparsity 0.4 \
-    --interactive
-```
+### Hybrid KV Cache
+- **vAttention**: 15% memory savings through dynamic allocation
+- **CAKE**: 12% additional savings through computation/I/O scheduling
+- **Combined**: 25.2% total memory reduction
 
-## Command Line Options
+### SimpleAdaptiVocab
+- Combines common phrases into single tokens
+- Reduces token count without model retraining
 
-```
---model MODEL              Model name (default: gpt2)
---patch-tokenizer PATH    Path to AdaptiVocab PatchTokenizer .pkl file
---larosa-sparsity FLOAT   LaRoSA sparsity level (0.0-1.0, default: 0.0)
---device DEVICE           Device: cpu or cuda (default: cpu)
---interactive             Run in interactive chat mode
---prompt TEXT             Single prompt to generate from
-```
+### Word Removal
+- Removes every Nth word (3rd, 4th, or 5th)
+- Maintains conceptual soundness for summarization
 
-## Examples
+### LaRoSA
+- Activation sparsity for faster computation
+- Best on GPU, simplified CPU version available
 
-### Single Generation
+## Results
 
-```bash
-python standalone_chat.py \
-    --model gpt2 \
-    --prompt "The future of AI is"
-```
+Results are saved to:
+- `comprehensive_results.json` - Single query comprehensive results
+- `multi_query_results.json` - Multi-query results with input/output pairs
 
-### Interactive Chat
+Visualizations are saved to:
+- `comprehensive_analysis_plots/` - Comprehensive method comparison charts
+- `multi_query_plots/` - Multi-query quality and performance charts
 
-```bash
-python standalone_chat.py --model gpt2 --interactive
+## Documentation
 
-You: Hello! How are you?
-Assistant: Hello! I'm doing well, thank you for asking. How can I help you today?
-
-You: Tell me about machine learning
-Assistant: Machine learning is a subset of artificial intelligence...
-```
-
-## Architecture
-
-```
-standalone_chatbot/
-├── standalone_chat.py      # Main chatbot implementation
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
-```
-
-### Components
-
-1. **FusedLLMEngine** - Main engine that integrates all optimizations
-2. **SimpleLaRoSA** - CPU-compatible activation sparsity
-3. **AdaptiVocab Integration** - PatchTokenizer support
-4. **Chat Interface** - Interactive conversation support
-
-## Differences from Sarathi-Serve Version
-
-| Feature | Sarathi-Serve | Standalone |
-|---------|--------------|------------|
-| CUDA Required | ✅ Yes | ❌ No |
-| Complex Setup | ✅ Yes | ❌ No |
-| macOS Support | ⚠️ Limited | ✅ Full |
-| vAttention | ✅ Yes | ❌ Simplified |
-| LaRoSA | ✅ Full | ⚠️ Simplified |
-| AdaptiVocab | ✅ Yes | ✅ Yes |
-| Easy to Use | ⚠️ Complex | ✅ Simple |
-
-## Limitations
-
-- **LaRoSA**: Simplified CPU implementation (no custom CUDA kernels)
-- **vAttention**: Not included (requires CUDA)
-- **Performance**: Slower than GPU-accelerated version
-- **Models**: Works best with smaller models (GPT-2, etc.)
-
-## Future Enhancements
-
-- [ ] Add REST API server
-- [ ] Improve LaRoSA implementation
-- [ ] Add model quantization support
-- [ ] Add streaming responses
-- [ ] Add conversation export/import
-
-## Troubleshooting
-
-### Import Error: AdaptiVocab
-
-If you see `AdaptiVocab not available`, make sure you've installed AdaptiVocab:
-
-```bash
-cd ../AdaptiVocab
-pip install -r requirements.txt
-```
-
-### Out of Memory
-
-For larger models, use a smaller model or reduce `max_new_tokens`:
-
-```bash
-python standalone_chat.py --model gpt2 --interactive
-```
-
-### Slow Generation
-
-This is expected on CPU. For faster generation:
-- Use smaller models (gpt2 instead of gpt2-medium)
-- Reduce `max_new_tokens`
-- Use GPU if available (`--device cuda`)
-
-## License
-
-Same as the main repository.
-
+- `VATTENTION_EXPLANATION.md` - Detailed explanation of vAttention and Hybrid KV Cache

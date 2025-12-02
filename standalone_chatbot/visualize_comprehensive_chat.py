@@ -26,9 +26,9 @@ def load_results(results_file: str = "comprehensive_results.json"):
         print("   Run comprehensive_chat_engine.py first to generate results")
         return None
 
-def create_visualizations(results: dict):
+def create_visualizations(results: dict, output_folder: str = "comprehensive_analysis_plots"):
     """Create comprehensive visualizations."""
-    output_dir = Path("comprehensive_chat_plots")
+    output_dir = Path(output_folder)
     output_dir.mkdir(exist_ok=True)
     
     # Extract data
@@ -360,6 +360,7 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description="Visualize comprehensive chat engine results")
     parser.add_argument("--input", type=str, default="comprehensive_results.json", help="Input JSON file")
+    parser.add_argument("--output", type=str, default="comprehensive_analysis_plots", help="Output folder for plots")
     
     args = parser.parse_args()
     
@@ -368,7 +369,7 @@ if __name__ == "__main__":
     
     results = load_results(args.input)
     if results:
-        create_visualizations(results)
+        create_visualizations(results, args.output)
         print("\n✅ Visualization complete!")
     else:
         print("\n❌ Could not load results. Please run comprehensive_chat_engine.py first.")

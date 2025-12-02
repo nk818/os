@@ -1,0 +1,293 @@
+{
+  "query_1": {
+    "query_id": "query_1",
+    "query_input": "What is artificial intelligence?",
+    "category": "definition",
+    "expected_keywords": [
+      "intelligence",
+      "machine",
+      "computer",
+      "learning"
+    ],
+    "methods": {
+      "baseline": {
+        "input": "What is artificial intelligence?",
+        "output": "AI: Artificial intelligence (AI) refers to the development of computer systems that can perform tasks that would typically require human intelligence.",
+        "metrics": {
+          "total_time": 19.487468391998846,
+          "input_tokens": 5,
+          "output_tokens": 25,
+          "total_tokens": 30,
+          "peak_memory_mb": 10760.578125,
+          "tokens_per_second": 1.5394508612682283,
+          "efficiency_score": 6.916616730795783
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "simple_adaptivocab": {
+        "input": "What is artificial intelligence?",
+        "output": "AI, short for Artificial Intelligence, refers to machines or computer systems that can perform tasks that typically require human intelligence.",
+        "metrics": {
+          "total_time": 19.2053302289969,
+          "input_tokens": 5,
+          "output_tokens": 23,
+          "total_tokens": 28,
+          "peak_memory_mb": 10624.92578125,
+          "tokens_per_second": 1.4579285888937537,
+          "efficiency_score": 6.583962029315326
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "hybrid_kv_cache": {
+        "input": "What is artificial intelligence?",
+        "output": "AI is the simulation of human intelligence processes by machines, especially computer systems.",
+        "metrics": {
+          "total_time": 18.888841222000337,
+          "input_tokens": 5,
+          "output_tokens": 15,
+          "total_tokens": 20,
+          "peak_memory_mb": 10611.63203125,
+          "tokens_per_second": 1.0588262014032637,
+          "efficiency_score": 4.3240958978300466
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      },
+      "all_combined": {
+        "input": "What is artificial intelligence?",
+        "output": "The word intelligence has been used in a number of different ways.",
+        "metrics": {
+          "total_time": 25.444549898998957,
+          "input_tokens": 4,
+          "output_tokens": 13,
+          "total_tokens": 17,
+          "peak_memory_mb": 0,
+          "tokens_per_second": 0.6681195017196518,
+          "efficiency_score": 3.8672478006878603
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": true,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      }
+    }
+  },
+  "query_2": {
+    "query_id": "query_2",
+    "query_input": "Explain quantum mechanics in simple terms.",
+    "category": "explanation",
+    "expected_keywords": [
+      "quantum",
+      "particles",
+      "physics",
+      "energy"
+    ],
+    "methods": {
+      "baseline": {
+        "input": "Explain quantum mechanics in simple terms.",
+        "output": "## INPUT",
+        "metrics": {
+          "total_time": 18.62410426200222,
+          "input_tokens": 8,
+          "output_tokens": 3,
+          "total_tokens": 11,
+          "peak_memory_mb": 6901.265625,
+          "tokens_per_second": 0.5906324323174416,
+          "efficiency_score": 0.8367311460881495
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "simple_adaptivocab": {
+        "input": "Explain quantum mechanics in simple terms.",
+        "output": "## INPUT",
+        "metrics": {
+          "total_time": 18.83593696299795,
+          "input_tokens": 8,
+          "output_tokens": 3,
+          "total_tokens": 11,
+          "peak_memory_mb": 10618.18359375,
+          "tokens_per_second": 0.5839900622734526,
+          "efficiency_score": 0.8339068125286442
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "hybrid_kv_cache": {
+        "input": "Explain quantum mechanics in simple terms.",
+        "output": "Output: Quantum mechanics is the branch of physics that studies how tiny particles, such as atoms and electrons, behave and interact with each other.",
+        "metrics": {
+          "total_time": 17.83259940700009,
+          "input_tokens": 8,
+          "output_tokens": 28,
+          "total_tokens": 36,
+          "peak_memory_mb": 10609.15171875,
+          "tokens_per_second": 2.018774670947209,
+          "efficiency_score": 8.00852785740254
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      },
+      "all_combined": {
+        "input": "Explain quantum mechanics in simple terms.",
+        "output": "terms",
+        "metrics": {
+          "total_time": 23.737118182001723,
+          "input_tokens": 5,
+          "output_tokens": 1,
+          "total_tokens": 6,
+          "peak_memory_mb": 0,
+          "tokens_per_second": 0.2527686787416933,
+          "efficiency_score": 0.4011074714966773
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": true,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      }
+    }
+  },
+  "query_3": {
+    "query_id": "query_3",
+    "query_input": "How does machine learning work?",
+    "category": "how_it_works",
+    "expected_keywords": [
+      "learning",
+      "data",
+      "algorithm",
+      "model"
+    ],
+    "methods": {
+      "baseline": {
+        "input": "How does machine learning work?",
+        "output": "The basic concept behind machine-learning is that an algorithm can be trained to make predictions from data.",
+        "metrics": {
+          "total_time": 13.68574055299905,
+          "input_tokens": 6,
+          "output_tokens": 20,
+          "total_tokens": 26,
+          "peak_memory_mb": 6906.9453125,
+          "tokens_per_second": 1.8997875854297444,
+          "efficiency_score": 5.861044332240304
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "simple_adaptivocab": {
+        "input": "How does machine learning work?",
+        "output": "Machine learning works by creating a mathematical model that can learn from data.",
+        "metrics": {
+          "total_time": 17.19976391900127,
+          "input_tokens": 6,
+          "output_tokens": 14,
+          "total_tokens": 20,
+          "peak_memory_mb": 10608.32421875,
+          "tokens_per_second": 1.1628066579393683,
+          "efficiency_score": 4.3656882567488955
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "hybrid_kv_cache": {
+        "input": "How does machine learning work?",
+        "output": "A: Machine learning algorithms learn from data by identifying patterns and relationships.",
+        "metrics": {
+          "total_time": 18.707107594000263,
+          "input_tokens": 6,
+          "output_tokens": 14,
+          "total_tokens": 20,
+          "peak_memory_mb": 10606.24015625,
+          "tokens_per_second": 1.069112362747857,
+          "efficiency_score": 4.028210649808032
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      },
+      "all_combined": {
+        "input": "How does machine learning work?",
+        "output": "What can we do to support our students in their quest for knowledge and understanding?\"",
+        "metrics": {
+          "total_time": 25.125471938001283,
+          "input_tokens": 5,
+          "output_tokens": 16,
+          "total_tokens": 21,
+          "peak_memory_mb": 280.55,
+          "tokens_per_second": 0.8358051960902008,
+          "efficiency_score": 4.856777968651728
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": true,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      }
+    }
+  }
+}
