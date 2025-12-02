@@ -29,6 +29,22 @@ TEST_QUERIES = [
         "input": "How does machine learning work?",
         "category": "how_it_works",
         "expected_keywords": ["learning", "data", "algorithm", "model"]
+    },
+    {
+        "id": "query_4",
+        "input": "Summarize the following text: " + """
+        Artificial intelligence has revolutionized numerous industries by enabling machines to perform tasks that traditionally required human intelligence. Machine learning algorithms can analyze vast amounts of data to identify patterns and make predictions with remarkable accuracy. Deep learning, a subset of machine learning, uses neural networks with multiple layers to process complex information. Natural language processing allows computers to understand and generate human language, powering chatbots and translation services. Computer vision enables machines to interpret and analyze visual information from images and videos. These technologies are transforming healthcare through diagnostic tools, finance through fraud detection, and transportation through autonomous vehicles. The integration of AI into everyday applications continues to expand, making intelligent systems more accessible and impactful across various sectors of society.
+        """,
+        "category": "summarization",
+        "expected_keywords": ["artificial intelligence", "machine learning", "neural networks", "applications"]
+    },
+    {
+        "id": "query_5",
+        "input": "Summarize the following text: " + """
+        Climate change represents one of the most pressing challenges facing humanity in the 21st century. Rising global temperatures are causing widespread environmental changes, including melting ice caps, rising sea levels, and extreme weather events. The primary driver of climate change is the increased concentration of greenhouse gases in the atmosphere, largely due to human activities such as burning fossil fuels, deforestation, and industrial processes. Scientists have documented significant impacts on ecosystems, with many species facing habitat loss and extinction risks. Agricultural systems are also being affected, with changing precipitation patterns and temperature extremes threatening food security. International efforts to address climate change include the Paris Agreement, which aims to limit global warming to well below 2 degrees Celsius. Transitioning to renewable energy sources, improving energy efficiency, and implementing sustainable practices are crucial steps toward mitigating the effects of climate change.
+        """,
+        "category": "summarization",
+        "expected_keywords": ["climate change", "global warming", "greenhouse gases", "environmental impact"]
     }
 ]
 

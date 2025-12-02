@@ -12,15 +12,15 @@
     "methods": {
       "baseline": {
         "input": "What is artificial intelligence?",
-        "output": "AI: Artificial intelligence (AI) refers to the development of computer systems that can perform tasks that would typically require human intelligence.",
+        "output": "Artificial intelligence (AI) is the ability of machines to perform tasks that normally require human intelligence, such as learning, reasoning, decision making,",
         "metrics": {
-          "total_time": 19.487468391998846,
+          "total_time": 19.144891252999514,
           "input_tokens": 5,
-          "output_tokens": 25,
-          "total_tokens": 30,
-          "peak_memory_mb": 10760.578125,
-          "tokens_per_second": 1.5394508612682283,
-          "efficiency_score": 6.916616730795783
+          "output_tokens": 29,
+          "total_tokens": 34,
+          "peak_memory_mb": 10755.046875,
+          "tokens_per_second": 1.7759306935040997,
+          "efficiency_score": 7.3113206693629715
         },
         "optimizations": {
           "adaptivocab": false,
@@ -33,15 +33,15 @@
       },
       "simple_adaptivocab": {
         "input": "What is artificial intelligence?",
-        "output": "AI, short for Artificial Intelligence, refers to machines or computer systems that can perform tasks that typically require human intelligence.",
+        "output": "AI is a field of computer science that focuses on creating machines capable of performing tasks that typically require human intelligence.",
         "metrics": {
-          "total_time": 19.2053302289969,
+          "total_time": 17.027353640998626,
           "input_tokens": 5,
-          "output_tokens": 23,
-          "total_tokens": 28,
-          "peak_memory_mb": 10624.92578125,
-          "tokens_per_second": 1.4579285888937537,
-          "efficiency_score": 6.583962029315326
+          "output_tokens": 22,
+          "total_tokens": 27,
+          "peak_memory_mb": 10631.84375,
+          "tokens_per_second": 1.5856838689829722,
+          "efficiency_score": 6.93503540980547
         },
         "optimizations": {
           "adaptivocab": true,
@@ -54,15 +54,15 @@
       },
       "hybrid_kv_cache": {
         "input": "What is artificial intelligence?",
-        "output": "AI is the simulation of human intelligence processes by machines, especially computer systems.",
+        "output": "AI, short for artificial Intelligence, is a computer program that can learn and perform tasks without human intervention.",
         "metrics": {
-          "total_time": 18.888841222000337,
+          "total_time": 31.722733783000876,
           "input_tokens": 5,
-          "output_tokens": 15,
-          "total_tokens": 20,
-          "peak_memory_mb": 10611.63203125,
-          "tokens_per_second": 1.0588262014032637,
-          "efficiency_score": 4.3240958978300466
+          "output_tokens": 21,
+          "total_tokens": 26,
+          "peak_memory_mb": 10613.58125,
+          "tokens_per_second": 0.8196014939271251,
+          "efficiency_score": 5.728575505027274
         },
         "optimizations": {
           "adaptivocab": false,
@@ -75,15 +75,15 @@
       },
       "all_combined": {
         "input": "What is artificial intelligence?",
-        "output": "The word intelligence has been used in a number of different ways.",
+        "output": "Intelligence, according to the most widely accepted definition of the term in psychology and neuroscience, refers to a person's ability to learn from experience,",
         "metrics": {
-          "total_time": 25.444549898998957,
+          "total_time": 47.34578433799834,
           "input_tokens": 4,
-          "output_tokens": 13,
-          "total_tokens": 17,
-          "peak_memory_mb": 0,
-          "tokens_per_second": 0.6681195017196518,
-          "efficiency_score": 3.8672478006878603
+          "output_tokens": 29,
+          "total_tokens": 33,
+          "peak_memory_mb": 1232.70359375,
+          "tokens_per_second": 0.6969997532286136,
+          "efficiency_score": 7.486831029009571
         },
         "optimizations": {
           "adaptivocab": true,
@@ -109,15 +109,15 @@
     "methods": {
       "baseline": {
         "input": "Explain quantum mechanics in simple terms.",
-        "output": "## INPUT",
+        "output": "Input: Quantum Mechanics is a branch of physics that studies the behavior of matter and energy at the smallest scales, such as atoms and subatomic particles",
         "metrics": {
-          "total_time": 18.62410426200222,
+          "total_time": 33.74604955200266,
           "input_tokens": 8,
-          "output_tokens": 3,
-          "total_tokens": 11,
-          "peak_memory_mb": 6901.265625,
-          "tokens_per_second": 0.5906324323174416,
-          "efficiency_score": 0.8367311460881495
+          "output_tokens": 29,
+          "total_tokens": 37,
+          "peak_memory_mb": 6912.45703125,
+          "tokens_per_second": 1.0964246331406289,
+          "efficiency_score": 8.240175649856479
         },
         "optimizations": {
           "adaptivocab": false,
@@ -130,15 +130,15 @@
       },
       "simple_adaptivocab": {
         "input": "Explain quantum mechanics in simple terms.",
-        "output": "## INPUT",
+        "output": "Answer: Quantum mechanics is the study of how tiny particles like atoms and electrons behave.",
         "metrics": {
-          "total_time": 18.83593696299795,
+          "total_time": 33.48609804300213,
           "input_tokens": 8,
-          "output_tokens": 3,
-          "total_tokens": 11,
-          "peak_memory_mb": 10618.18359375,
-          "tokens_per_second": 0.5839900622734526,
-          "efficiency_score": 0.8339068125286442
+          "output_tokens": 17,
+          "total_tokens": 25,
+          "peak_memory_mb": 10616.2265625,
+          "tokens_per_second": 0.7465784746821065,
+          "efficiency_score": 4.799337855579452
         },
         "optimizations": {
           "adaptivocab": true,
@@ -151,15 +151,15 @@
       },
       "hybrid_kv_cache": {
         "input": "Explain quantum mechanics in simple terms.",
-        "output": "Output: Quantum mechanics is the branch of physics that studies how tiny particles, such as atoms and electrons, behave and interact with each other.",
+        "output": "Quantum mechanics is a branch of physics that deals with the behavior and properties of matter and energy at the smallest scales, such as atoms and subatomic particles",
         "metrics": {
-          "total_time": 17.83259940700009,
+          "total_time": 33.082253182001295,
           "input_tokens": 8,
-          "output_tokens": 28,
-          "total_tokens": 36,
-          "peak_memory_mb": 10609.15171875,
-          "tokens_per_second": 2.018774670947209,
-          "efficiency_score": 8.00852785740254
+          "output_tokens": 31,
+          "total_tokens": 39,
+          "peak_memory_mb": 10604.54234375,
+          "tokens_per_second": 1.1788797995542308,
+          "efficiency_score": 8.872655220616837
         },
         "optimizations": {
           "adaptivocab": false,
@@ -172,15 +172,15 @@
       },
       "all_combined": {
         "input": "Explain quantum mechanics in simple terms.",
-        "output": "terms",
+        "output": "terms.",
         "metrics": {
-          "total_time": 23.737118182001723,
+          "total_time": 45.30736117900233,
           "input_tokens": 5,
-          "output_tokens": 1,
-          "total_tokens": 6,
+          "output_tokens": 2,
+          "total_tokens": 7,
           "peak_memory_mb": 0,
-          "tokens_per_second": 0.2527686787416933,
-          "efficiency_score": 0.4011074714966773
+          "tokens_per_second": 0.15450028026006835,
+          "efficiency_score": 0.36180011210402735
         },
         "optimizations": {
           "adaptivocab": true,
@@ -206,15 +206,15 @@
     "methods": {
       "baseline": {
         "input": "How does machine learning work?",
-        "output": "The basic concept behind machine-learning is that an algorithm can be trained to make predictions from data.",
+        "output": "Machine learning is an automated way of solving problems.",
         "metrics": {
-          "total_time": 13.68574055299905,
+          "total_time": 17.758973346000857,
           "input_tokens": 6,
-          "output_tokens": 20,
-          "total_tokens": 26,
-          "peak_memory_mb": 6906.9453125,
-          "tokens_per_second": 1.8997875854297444,
-          "efficiency_score": 5.861044332240304
+          "output_tokens": 10,
+          "total_tokens": 16,
+          "peak_memory_mb": 6900.84765625,
+          "tokens_per_second": 0.9009529823751349,
+          "efficiency_score": 3.0610767596744766
         },
         "optimizations": {
           "adaptivocab": false,
@@ -227,15 +227,15 @@
       },
       "simple_adaptivocab": {
         "input": "How does machine learning work?",
-        "output": "Machine learning works by creating a mathematical model that can learn from data.",
+        "output": "Machine Learning works by training a computer system on large sets of data.",
         "metrics": {
-          "total_time": 17.19976391900127,
+          "total_time": 11.159685849997913,
           "input_tokens": 6,
           "output_tokens": 14,
           "total_tokens": 20,
-          "peak_memory_mb": 10608.32421875,
-          "tokens_per_second": 1.1628066579393683,
-          "efficiency_score": 4.3656882567488955
+          "peak_memory_mb": 10620.64453125,
+          "tokens_per_second": 1.7921651441472914,
+          "efficiency_score": 4.61743099512409
         },
         "optimizations": {
           "adaptivocab": true,
@@ -248,15 +248,15 @@
       },
       "hybrid_kv_cache": {
         "input": "How does machine learning work?",
-        "output": "A: Machine learning algorithms learn from data by identifying patterns and relationships.",
+        "output": "A: Machine learning algorithms are designed to analyze and learn from data, enabling them to make predictions or take actions without being explicitly programmed.",
         "metrics": {
-          "total_time": 18.707107594000263,
+          "total_time": 26.149494146997313,
           "input_tokens": 6,
-          "output_tokens": 14,
-          "total_tokens": 20,
-          "peak_memory_mb": 10606.24015625,
-          "tokens_per_second": 1.069112362747857,
-          "efficiency_score": 4.028210649808032
+          "output_tokens": 27,
+          "total_tokens": 33,
+          "peak_memory_mb": 10605.5253125,
+          "tokens_per_second": 1.2619746988027039,
+          "efficiency_score": 7.705723355205527
         },
         "optimizations": {
           "adaptivocab": false,
@@ -269,15 +269,209 @@
       },
       "all_combined": {
         "input": "How does machine learning work?",
-        "output": "What can we do to support our students in their quest for knowledge and understanding?\"",
+        "output": "How can we enhance it, improve it and even predict it? These are questions that have occupied the minds of researchers for centuries.",
         "metrics": {
-          "total_time": 25.125471938001283,
+          "total_time": 25.592960070000117,
           "input_tokens": 5,
-          "output_tokens": 16,
-          "total_tokens": 21,
-          "peak_memory_mb": 280.55,
-          "tokens_per_second": 0.8358051960902008,
-          "efficiency_score": 4.856777968651728
+          "output_tokens": 26,
+          "total_tokens": 31,
+          "peak_memory_mb": 0,
+          "tokens_per_second": 1.2112705961018544,
+          "efficiency_score": 7.384508238440741
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": true,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      }
+    }
+  },
+  "query_4": {
+    "query_id": "query_4",
+    "query_input": "Summarize the following text: \n        Artificial intelligence has revolutionized numerous industries by enabling machines to perform tasks that traditionally required human intelligence. Machine learning algorithms can analyze vast amounts of data to identify patterns and make predictions with remarkable accuracy. Deep learning, a subset of machine learning, uses neural networks with multiple layers to process complex information. Natural language processing allows computers to understand and generate human language, powering chatbots and translation services. Computer vision enables machines to interpret and analyze visual information from images and videos. These technologies are transforming healthcare through diagnostic tools, finance through fraud detection, and transportation through autonomous vehicles. The integration of AI into everyday applications continues to expand, making intelligent systems more accessible and impactful across various sectors of society.\n        ",
+    "category": "summarization",
+    "expected_keywords": [
+      "artificial intelligence",
+      "machine learning",
+      "neural networks",
+      "applications"
+    ],
+    "methods": {
+      "baseline": {
+        "input": "Summarize the following text: \n        Artificial intelligence has revolutionized numerous industries by enabling machines to perform tasks that traditionally required human intelligence. Machine learning algorithms can analyze vast amounts of data to identify patterns and make predictions with remarkable accuracy. Deep learning, a subset of machine learning, uses neural networks with multiple layers to process complex information. Natural language processing allows computers to understand and generate human language, powering chatbots and translation services. Computer vision enables machines to interpret and analyze visual information from images and videos. These technologies are transforming healthcare through diagnostic tools, finance through fraud detection, and transportation through autonomous vehicles. The integration of AI into everyday applications continues to expand, making intelligent systems more accessible and impactful across various sectors of society.\n        ",
+        "output": "AI has transformed many industries with its ability to replicate human-like intelligence in machines.",
+        "metrics": {
+          "total_time": 25.89938171599715,
+          "input_tokens": 150,
+          "output_tokens": 17,
+          "total_tokens": 167,
+          "peak_memory_mb": 7199.80859375,
+          "tokens_per_second": 6.448030375059104,
+          "efficiency_score": 6.786170668343628
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "simple_adaptivocab": {
+        "input": "Summarize the following text: \n        Artificial intelligence has revolutionized numerous industries by enabling machines to perform tasks that traditionally required human intelligence. Machine learning algorithms can analyze vast amounts of data to identify patterns and make predictions with remarkable accuracy. Deep learning, a subset of machine learning, uses neural networks with multiple layers to process complex information. Natural language processing allows computers to understand and generate human language, powering chatbots and translation services. Computer vision enables machines to interpret and analyze visual information from images and videos. These technologies are transforming healthcare through diagnostic tools, finance through fraud detection, and transportation through autonomous vehicles. The integration of AI into everyday applications continues to expand, making intelligent systems more accessible and impactful across various sectors of society.\n        ",
+        "output": "**Solution**:",
+        "metrics": {
+          "total_time": 26.21254077699996,
+          "input_tokens": 150,
+          "output_tokens": 4,
+          "total_tokens": 154,
+          "peak_memory_mb": 10668.68359375,
+          "tokens_per_second": 5.875050469549538,
+          "efficiency_score": 2.654350618991948
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "hybrid_kv_cache": {
+        "input": "Summarize the following text: \n        Artificial intelligence has revolutionized numerous industries by enabling machines to perform tasks that traditionally required human intelligence. Machine learning algorithms can analyze vast amounts of data to identify patterns and make predictions with remarkable accuracy. Deep learning, a subset of machine learning, uses neural networks with multiple layers to process complex information. Natural language processing allows computers to understand and generate human language, powering chatbots and translation services. Computer vision enables machines to interpret and analyze visual information from images and videos. These technologies are transforming healthcare through diagnostic tools, finance through fraud detection, and transportation through autonomous vehicles. The integration of AI into everyday applications continues to expand, making intelligent systems more accessible and impactful across various sectors of society.\n        ",
+        "output": "Output: Artificial intelligence, particularly machine and deep learning as well as natural language and computer vision, is transforming industries such as healthcare, financial services",
+        "metrics": {
+          "total_time": 25.22678434699992,
+          "input_tokens": 150,
+          "output_tokens": 28,
+          "total_tokens": 178,
+          "peak_memory_mb": 10585.0875,
+          "tokens_per_second": 7.055992454352135,
+          "efficiency_score": 10.027441814861033
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      },
+      "all_combined": {
+        "input": "Summarize the following text: \n        Artificial intelligence has revolutionized numerous industries by enabling machines to perform tasks that traditionally required human intelligence. Machine learning algorithms can analyze vast amounts of data to identify patterns and make predictions with remarkable accuracy. Deep learning, a subset of machine learning, uses neural networks with multiple layers to process complex information. Natural language processing allows computers to understand and generate human language, powering chatbots and translation services. Computer vision enables machines to interpret and analyze visual information from images and videos. These technologies are transforming healthcare through diagnostic tools, finance through fraud detection, and transportation through autonomous vehicles. The integration of AI into everyday applications continues to expand, making intelligent systems more accessible and impactful across various sectors of society.\n        ",
+        "output": "\"\"\"",
+        "metrics": {
+          "total_time": 30.75822723699821,
+          "input_tokens": 106,
+          "output_tokens": 1,
+          "total_tokens": 107,
+          "peak_memory_mb": 0,
+          "tokens_per_second": 3.4787440503493223,
+          "efficiency_score": 1.6914976201397292
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": true,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      }
+    }
+  },
+  "query_5": {
+    "query_id": "query_5",
+    "query_input": "Summarize the following text: \n        Climate change represents one of the most pressing challenges facing humanity in the 21st century. Rising global temperatures are causing widespread environmental changes, including melting ice caps, rising sea levels, and extreme weather events. The primary driver of climate change is the increased concentration of greenhouse gases in the atmosphere, largely due to human activities such as burning fossil fuels, deforestation, and industrial processes. Scientists have documented significant impacts on ecosystems, with many species facing habitat loss and extinction risks. Agricultural systems are also being affected, with changing precipitation patterns and temperature extremes threatening food security. International efforts to address climate change include the Paris Agreement, which aims to limit global warming to well below 2 degrees Celsius. Transitioning to renewable energy sources, improving energy efficiency, and implementing sustainable practices are crucial steps toward mitigating the effects of climate change.\n        ",
+    "category": "summarization",
+    "expected_keywords": [
+      "climate change",
+      "global warming",
+      "greenhouse gases",
+      "environmental impact"
+    ],
+    "methods": {
+      "baseline": {
+        "input": "Summarize the following text: \n        Climate change represents one of the most pressing challenges facing humanity in the 21st century. Rising global temperatures are causing widespread environmental changes, including melting ice caps, rising sea levels, and extreme weather events. The primary driver of climate change is the increased concentration of greenhouse gases in the atmosphere, largely due to human activities such as burning fossil fuels, deforestation, and industrial processes. Scientists have documented significant impacts on ecosystems, with many species facing habitat loss and extinction risks. Agricultural systems are also being affected, with changing precipitation patterns and temperature extremes threatening food security. International efforts to address climate change include the Paris Agreement, which aims to limit global warming to well below 2 degrees Celsius. Transitioning to renewable energy sources, improving energy efficiency, and implementing sustainable practices are crucial steps toward mitigating the effects of climate change.\n        ",
+        "output": "\"\"\"",
+        "metrics": {
+          "total_time": 24.803838072999497,
+          "input_tokens": 172,
+          "output_tokens": 1,
+          "total_tokens": 173,
+          "peak_memory_mb": 7080.71484375,
+          "tokens_per_second": 6.974727035826006,
+          "efficiency_score": 3.097220582742953
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "simple_adaptivocab": {
+        "input": "Summarize the following text: \n        Climate change represents one of the most pressing challenges facing humanity in the 21st century. Rising global temperatures are causing widespread environmental changes, including melting ice caps, rising sea levels, and extreme weather events. The primary driver of climate change is the increased concentration of greenhouse gases in the atmosphere, largely due to human activities such as burning fossil fuels, deforestation, and industrial processes. Scientists have documented significant impacts on ecosystems, with many species facing habitat loss and extinction risks. Agricultural systems are also being affected, with changing precipitation patterns and temperature extremes threatening food security. International efforts to address climate change include the Paris Agreement, which aims to limit global warming to well below 2 degrees Celsius. Transitioning to renewable energy sources, improving energy efficiency, and implementing sustainable practices are crucial steps toward mitigating the effects of climate change.\n        ",
+        "output": "Output: Climate change poses a major challenge to humanity today due its impact on the environment, particularly through rising global temperature, melting polar icecaps, sea",
+        "metrics": {
+          "total_time": 25.274617786002636,
+          "input_tokens": 172,
+          "output_tokens": 30,
+          "total_tokens": 202,
+          "peak_memory_mb": 10637.41796875,
+          "tokens_per_second": 7.992207902422558,
+          "efficiency_score": 10.70258003216258
+        },
+        "optimizations": {
+          "adaptivocab": true,
+          "simple_adaptivocab": true,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": false
+        }
+      },
+      "hybrid_kv_cache": {
+        "input": "Summarize the following text: \n        Climate change represents one of the most pressing challenges facing humanity in the 21st century. Rising global temperatures are causing widespread environmental changes, including melting ice caps, rising sea levels, and extreme weather events. The primary driver of climate change is the increased concentration of greenhouse gases in the atmosphere, largely due to human activities such as burning fossil fuels, deforestation, and industrial processes. Scientists have documented significant impacts on ecosystems, with many species facing habitat loss and extinction risks. Agricultural systems are also being affected, with changing precipitation patterns and temperature extremes threatening food security. International efforts to address climate change include the Paris Agreement, which aims to limit global warming to well below 2 degrees Celsius. Transitioning to renewable energy sources, improving energy efficiency, and implementing sustainable practices are crucial steps toward mitigating the effects of climate change.\n        ",
+        "output": "The text discusses climate science, focusing on the causes and consequences of global climate changes.",
+        "metrics": {
+          "total_time": 25.659749849997752,
+          "input_tokens": 172,
+          "output_tokens": 17,
+          "total_tokens": 189,
+          "peak_memory_mb": 10616.57171875,
+          "tokens_per_second": 7.365621298136566,
+          "efficiency_score": 7.451589226358772
+        },
+        "optimizations": {
+          "adaptivocab": false,
+          "simple_adaptivocab": false,
+          "word_removal": false,
+          "larosa": false,
+          "vattention": false,
+          "hybrid_kv_cache": true
+        }
+      },
+      "all_combined": {
+        "input": "Summarize the following text: \n        Climate change represents one of the most pressing challenges facing humanity in the 21st century. Rising global temperatures are causing widespread environmental changes, including melting ice caps, rising sea levels, and extreme weather events. The primary driver of climate change is the increased concentration of greenhouse gases in the atmosphere, largely due to human activities such as burning fossil fuels, deforestation, and industrial processes. Scientists have documented significant impacts on ecosystems, with many species facing habitat loss and extinction risks. Agricultural systems are also being affected, with changing precipitation patterns and temperature extremes threatening food security. International efforts to address climate change include the Paris Agreement, which aims to limit global warming to well below 2 degrees Celsius. Transitioning to renewable energy sources, improving energy efficiency, and implementing sustainable practices are crucial steps toward mitigating the effects of climate change.\n        ",
+        "output": "\"\"\"",
+        "metrics": {
+          "total_time": 35.6738454869992,
+          "input_tokens": 118,
+          "output_tokens": 1,
+          "total_tokens": 119,
+          "peak_memory_mb": 0,
+          "tokens_per_second": 3.3357771884549923,
+          "efficiency_score": 1.634310875381997
         },
         "optimizations": {
           "adaptivocab": true,
