@@ -1,0 +1,21 @@
+{
+  "model_name": "gpt2",
+  "patch_tokenizer_path": null,
+  "attention_backend": "fa_vattn",
+  "block_size": 2097152,
+  "larosa_sparsity": 0.4,
+  "server_host": "localhost",
+  "server_port": 8000,
+  "server_timeout": 300,
+  "gstack_model_path": null,
+  "description": "Configuration for Fused LLM Chatbot",
+  "notes": {
+    "patch_tokenizer_path": "Set to path of PatchTokenizer.pkl for AdaptiVocab, or null to auto-detect",
+    "gstack_model_path": "Set to path of Gstack-trained model, or null to use standard model",
+    "larosa_sparsity": "0.0 to disable LaRoSA, 0.4 for 40% sparsity (recommended)",
+    "attention_backend": "fa_vattn for vAttention, flash_attn for standard FlashAttention"
+  }
+}
+
+
+
